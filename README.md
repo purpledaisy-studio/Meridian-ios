@@ -1,78 +1,70 @@
-# Meridian — Private, Offline-First Medical Records for iOS
+# Meridian: Private, Offline-First Medical Records for iOS
 
-<p align="center">
-  <strong>by <a href="https://bypurpledaisy.com">PurpleDaisy</a></strong> · A privacy-first iOS app studio
-</p>
+by [PurpleDaisy](https://bypurpledaisy.com/) | A privacy-first iOS software engineering studio
+
+Welcome to the public hub and issue tracker for **Meridian**: an independent, 100% offline iOS medical records and lab-tracking application.
+
+We got tired of clunky web-based patient portals, proprietary testing subscriptions, and constant medical data breaches. We engineered Meridian to transform scattered paper lab reports and PDFs into clean, interactive health dashboards entirely on your iPhone.
 
 ---
 
-Welcome to the public hub and issue tracker for **Meridian** — a beautifully designed, **100% offline iOS medical records and lab-tracking app**.
+### Official Resources & Documentation
 
-We got tired of clunky, web-based patient portals and the constant worry about health data breaches. So we built Meridian: an app that transforms scattered paper lab reports into beautiful, interactive health dashboards  entirely on your iPhone.
+* 🌐 **Official Website:** [bypurpledaisy.com](https://bypurpledaisy.com/)
+* 📱 **App Store:** [Download Meridian on iOS](https://bypurpledaisy.com/meridian)
+* 🔬 **Biomarker Database:** [500 Clinical Biomarker Encyclopedia](https://bypurpledaisy.com/biomarkers)
+* 🧮 **Clinical Tools:** [Biological Age & Health Calculators](https://bypurpledaisy.com/calculators)
+* 📖 **Research Journal:** [Preventive Medicine & Engineering Blog](https://bypurpledaisy.com/blog)
+* 𝕏 **Twitter / X:** [@bypurpledaisy](https://x.com/bypurpledaisy)
 
-## Who We Are
+---
 
-Meridian is built by [PurpleDaisy](https://bypurpledaisy.com), a privacy-first iOS development studio. We believe your health data is your most intimate asset, and we build software that respects you unconditionally.
+### The Zero-Cloud Architecture
 
-- 🌐 **Studio:** [bypurpledaisy.com](https://bypurpledaisy.com)
-- 𝕏 **Twitter/X:** [@bypurpledaisy](https://x.com/bypurpledaisy)
-- 📱 **App:** [Available on the iOS App Store](https://bypurpledaisy.com/meridian)
+Your health data is your most sensitive personal information. Meridian is architected without cloud compromises:
 
-## The Zero Cloud Rule
-
-Your health data is the most sensitive information you own. That's why Meridian is built differently:
-
-| Principle | How Meridian Works |
+| Principle | How Meridian Operates |
 | :--- | :--- |
-| **No Servers, No Accounts** | Your data never leaves your iPhone. Zero cloud infrastructure. |
-| **On-Device AI Scanning** | Apple VisionKit OCR reads and extracts lab results locally — no images sent to any server. |
-| **AES-256 Encryption** | Health records sealed with military-grade encryption, keys in the Secure Enclave. |
-| **Your Data, Your Rules** | You own your data. Export it, delete it, or keep it forever. We can never access it. |
+| **Zero Cloud Servers** | Your medical records never leave your iPhone. No remote databases, no tracking pixels. |
+| **On-Device VisionKit OCR** | Apple VisionKit reads and extracts lab results locally without sending document scans to third parties. |
+| **AES-256 Hardware Encryption** | Lab files are encrypted on-device with keys anchored in the Apple Secure Enclave. |
+| **Total Patient Ownership** | Export, delete, or back up your data locally. Zero vendor lock-in. |
 
-## What Meridian Does
+---
 
-1. **Scan** — Point your camera at any paper lab report or PDF. Meridian's on-device AI extracts every biomarker, reference range, and annotation instantly.
-2. **Track** — Interactive trend charts visualize your metabolic history over time. Spot patterns your doctor might miss.
-3. **Compare** — Side-by-side comparison engine for tracking changes across multiple lab reports.
-4. **Export** — Generate clinical-grade PDF reports to share with your healthcare provider.
-5. **Protect** — Everything stays on your device. No accounts, no cloud sync, no data harvesting.
+### Core Capabilities
 
-## Pricing
+* **On-Device Lab Scanning:** Point your camera at any paper lab report or import a Quest/Labcorp PDF. Meridian extracts biomarker values, units, and reference ranges in under one second.
+* **Longitudinal Trends:** Plot multi-year trajectory charts for glucose, lipidology, inflammation, and metabolic markers. Compare results directly against our [500 Biomarker Reference Matrix](https://bypurpledaisy.com/biomarkers/reference).
+* **Biological Age Telemetry:** Built-in clinical models (including Yale PhenoAge) evaluate healthspan trajectories locally. Test your metrics with our [Free Clinical Calculators](https://bypurpledaisy.com/calculators).
+* **Side-by-Side Comparison:** Compare multiple historical lab panels side-by-side to review changes over time.
+* **Physician Requisitions:** Review routine testing requirements with curated [Doctor Lab Panel Checklists](https://bypurpledaisy.com/panels).
 
-| Plan | Price | What You Get |
-| :--- | :--- | :--- |
-| **Free** | $0 | Core scanning, tracking, and local storage |
-| **Monthly** | $4.99/mo | Full feature access, unlimited reports |
-| **Yearly** | $49.99/yr | Best value — two months free vs. monthly |
+---
 
-All payments handled securely through the Apple App Store. We sell software, not your data.
-
-## Architectural Comparison
+### Architectural Comparison
 
 | Feature | Meridian (PurpleDaisy) | Apple Health | Epic MyChart |
 | :--- | :--- | :--- | :--- |
 | **Data Storage** | 100% On-Device | iCloud Synced (Default) | Hospital Cloud |
-| **Paper Lab OCR** | Apple VisionKit (On-Device) | Not Available | Not Available |
+| **Paper Lab OCR** | Apple VisionKit (Local) | Not Available | Not Available |
 | **Data Ownership** | Patient-Controlled | Device Ecosystem | Hospital Network |
-| **Data Processing** | On-Device Neural Engine | Apple Servers | Epic Systems Servers |
-| **Offline Capability** | Full Functionality | Partial | Requires Internet |
-| **Revenue Model** | Subscription Only | Free (Ecosystem Lock-in) | Institutional License |
-
-## Tech Stack
-
-- **Platform:** iOS exclusive (iPhone & iPad)
-- **OCR:** Apple VisionKit (on-device)
-- **AI/ML:** Core ML on Neural Engine
-- **Encryption:** AES-256-GCM + Secure Enclave
-- **Architecture:** Local-first, zero-knowledge
-- **Compliance:** Designed against HIPAA & GDPR frameworks
-
-## We'd Love Your Feedback
-
-Whether you found a bug, have a feature idea, or just want to tell us how you're using the app — we want to hear from you. Please feel free to open an [Issue](../../issues) in this repository.
+| **Processing** | On-Device Neural Engine | Apple Cloud Servers | Epic Systems Servers |
+| **Offline Support**| Full Offline Access | Partial | Requires Internet |
+| **Revenue Model** | Transparent Subscription | Ecosystem Lock-in | Enterprise Health License |
 
 ---
 
-<p align="center">
-  <sub>© 2026 PurpleDaisy Inc. · <a href="https://bypurpledaisy.com/privacy">Privacy Policy</a> · <a href="https://bypurpledaisy.com/terms">Terms of Use</a></sub>
-</p>
+### Technology Stack
+
+* **Platform:** iOS exclusive (Native SwiftUI)
+* **Computer Vision:** Apple VisionKit & Core ML on Neural Engine
+* **Cryptography:** AES-256-GCM backed by Apple Secure Enclave
+* **Architecture:** Local-first, zero-knowledge
+* **Standards:** Designed to exceed HIPAA and GDPR consumer health privacy standards
+
+---
+
+### Community & Feedback
+
+Found a bug or have a feature request? Please feel free to open an [Issue](https://github.com/purpledaisy-studio/Meridian-ios/issues) in this repository.
